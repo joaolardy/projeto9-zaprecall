@@ -2,7 +2,7 @@ import { useState } from "react";
 import buttonTurn from "./assets/img/seta_virar.png";
 import RespostaCard from "./RespostaCard";
 
-export default function CardOpen({question, answer, numPergunta}){
+export default function CardOpen({question, answer, numPergunta, contador, setContador}){
 
     const [virado, setVirado] = useState(false);
     function virarCard(){
@@ -19,7 +19,7 @@ export default function CardOpen({question, answer, numPergunta}){
     }
     if(virado === true){
         return(
-            <RespostaCard answer={answer} numPergunta={numPergunta} />
+            <RespostaCard contador={contador} setContador={setContador} answer={answer} numPergunta={numPergunta} />
         )
     }
 

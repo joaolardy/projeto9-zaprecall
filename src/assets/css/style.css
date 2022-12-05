@@ -95,7 +95,18 @@
     background: #2FBE34;
     border: 1px solid #2FBE34;
 }
-
+.red-text{
+    text-decoration: line-through;
+    color: #FF3030 !important;
+}
+.yellow-text{
+    text-decoration: line-through;
+    color: #FF922E !important;
+}
+.green-text{
+    text-decoration: line-through;
+    color: #2FBE34 !important;
+}
 .pergunta-fechada {
   width: 300px;
   height: 35px;

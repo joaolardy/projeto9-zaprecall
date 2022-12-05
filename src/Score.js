@@ -1,7 +1,7 @@
-export default function Score(){
+export default function Score({contador, setContador}){
     return(
         <div className="footer-concluidos">
-            0/4 CONCLUÍDOS
+            {contador}/4 CONCLUÍDOS
         </div>
     )
 }
