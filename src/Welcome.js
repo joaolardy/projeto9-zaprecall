@@ -13,7 +13,7 @@ export default function Welcome({jogoIniciado, setJogoIniciado}) {
                 <img src={logo} alt="logo" />
                 <h1>ZapRecall</h1>
             </div>
-            <div onClick={iniciarJogo} className="botao-iniciar">
+            <div onClick={iniciarJogo} data-test="start-btn" className="botao-iniciar">
                 <p>Iniciar Recall</p>
             </div>
         </div>

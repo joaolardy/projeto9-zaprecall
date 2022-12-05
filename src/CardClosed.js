@@ -1,5 +1,4 @@
 import buttonPlay from "./assets/img/seta_play.png";
-import cards from "./cards";
 import CardOpen from "./CardOpen";
 import { useState } from "react";
 
@@ -12,8 +11,8 @@ export default function CardClosed({ numPergunta, answer, question, contador, se
     if (!open === true) {
         return (
             <div className="pergunta-fechada">
-                <p>Pergunta {numPergunta + 1}</p>
-                <img onClick={abrirCard} src={buttonPlay} alt="botao play" />
+                <p data-test="flashcard-text">Pergunta {numPergunta + 1}</p>
+                <img onClick={abrirCard} data-test="play-btn" src={buttonPlay} alt="botao play" />
             </div>
         )
     }

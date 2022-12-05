@@ -6,20 +6,20 @@ export default function CardRespondido({ numPergunta, resposta }) {
     if (resposta === 'red') {
         return (<div className="pergunta-fechada">
             <p className="red-text">Pergunta {numPergunta + 1}</p>
-            <img src={redIcon} alt="botao play" />
+            <img src={redIcon} data-test="no-icon" alt="icone erro" />
         </div>)
     }
     if (resposta === 'yellow') {
         return (<div className="pergunta-fechada">
             <p className="yellow-text">Pergunta {numPergunta + 1}</p>
-            <img src={yellowIcon} alt="botao play" />
+            <img src={yellowIcon} data-test="partial-icon" alt="icone parcial" />
         </div>)
     }
 
     if (resposta === 'green') {
         return (<div className="pergunta-fechada">
-            <p className="green-text">Pergunta {numPergunta + 1}</p>
-            <img src={greenIcon} alt="botao play" />
+            <p className="green-text" data-test="flashcard-text">Pergunta {numPergunta + 1}</p>
+            <img src={greenIcon} data-test="zap-icon" alt="icone zap" />
         </div>)
     }
 }

@@ -1,5 +1,4 @@
 import { useState } from "react"
-import CardClosed from "./CardClosed";
 import CardRespondido from "./CardRespondido";
 
 export default function RespostaCard({ answer, numPergunta, contador, setContador}) {
@@ -26,16 +25,16 @@ export default function RespostaCard({ answer, numPergunta, contador, setContado
     if (respondido === false) {
         return (
             <div className="pergunta-aberta">
-                <p>{answer}</p>
+                <p data-test="flashcard-text">{answer}</p>
                 <div className="container-botoes">
 
-                    <button onClick={naoLembrei} className="botao red">
+                    <button onClick={naoLembrei} data-test="no-btn" className="botao red">
                         Não lembrei
                     </button>
-                    <button onClick={quaseNao} className="botao yellow">
+                    <button onClick={quaseNao} data-test="partial-btn" className="botao yellow">
                         Quase não lembrei
                     </button>
-                    <button onClick={zap} className="botao green">
+                    <button onClick={zap} data-test="zap-btn" className="botao green">
                         Zap!
                     </button>
                 </div>

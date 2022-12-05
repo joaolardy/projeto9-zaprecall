@@ -1,7 +1,9 @@
+import cards from "./cards"
+
 export default function Score({contador, setContador}){
     return(
-        <div className="footer-concluidos">
-            {contador}/4 CONCLUÍDOS
+        <div data-test="footer" className="footer-concluidos">
+            {contador}/{cards.length}
         </div>
     )
 }
