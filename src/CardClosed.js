@@ -10,7 +10,7 @@ export default function CardClosed({ numPergunta, answer, question, contador, se
 
     if (!open === true) {
         return (
-            <div className="pergunta-fechada">
+            <div data-test="flashcard" className="pergunta-fechada">
                 <p data-test="flashcard-text">Pergunta {numPergunta + 1}</p>
                 <img onClick={abrirCard} data-test="play-btn" src={buttonPlay} alt="botao play" />
             </div>

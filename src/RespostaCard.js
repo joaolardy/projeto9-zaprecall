@@ -24,7 +24,7 @@ export default function RespostaCard({ answer, numPergunta, contador, setContado
 
     if (respondido === false) {
         return (
-            <div className="pergunta-aberta">
+            <div data-test="flashcard" className="pergunta-aberta">
                 <p data-test="flashcard-text">{answer}</p>
                 <div className="container-botoes">
 

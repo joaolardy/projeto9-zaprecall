@@ -11,7 +11,7 @@ export default function CardOpen({question, answer, numPergunta, contador, setCo
 
     if(virado === false){
         return(
-            <div className="pergunta-aberta">
+            <div data-test="flashcard" className="pergunta-aberta">
                 <p data-test="flashcard-text">{question}</p>
                 <img onClick={virarCard} src={buttonTurn} data-test="turn-btn" alt="botao virar" />
             </div>
