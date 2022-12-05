@@ -8,8 +8,8 @@ export default function Welcome({jogoIniciado, setJogoIniciado}) {
     }
 
     return (
-        <div className="screen-container">
-            <div className="logo-container">
+        <div className="screen-container2">
+            <div className="tela-welcome">
                 <img src={logo} alt="logo" />
                 <h1>ZapRecall</h1>
             </div>

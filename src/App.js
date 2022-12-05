@@ -3,7 +3,7 @@ import Main from "./Main";
 import Welcome from "./Welcome";
 
 function App() {
-    const [jogoIniciado, setJogoIniciado] = useState(true);
+    const [jogoIniciado, setJogoIniciado] = useState(false);
     
     return (
         <>
